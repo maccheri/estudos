@@ -17,7 +17,7 @@ Para adicionar arquivo(s) ao stage para serem rastreados pelo Git
 Para gravar arquivos e alteracoes definitivamente no repositorio
 	git commit -m "Commit Message"
 
-Para rastrear mudancas e comita-las com um comando 
+Para pegar mudancas ja rastreadas e comita-las com um comando 
 	git commit -a -m "Commit Message"
 	or
 	git commit -am "Commit Message"

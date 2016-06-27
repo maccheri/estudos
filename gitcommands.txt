@@ -1,0 +1,36 @@
+Inicialmente:
+	git config --global user.name "Nome"
+	git config --global user.email email@email.com
+
+Para criar um repositorio git no diretorio atual
+	git init 
+
+Para mostrar todos as pastas detalhadamente
+	ls	-lha
+
+Para verificar o estado atual do repositorio
+	git status
+
+Para adicionar arquivo(s) ao stage para serem rastreados pelo Git
+	git add [nome do arquivo] [. (ponto ira adicionar todos os arquivos (untracked)), -A]
+
+Para gravar arquivos e alteracoes definitivamente no repositorio
+	git commit -m "Commit Message"
+
+Para rastrear mudancas e comita-las com um comando 
+	git commit -a -m "Commit Message"
+	or
+	git commit -am "Commit Message"
+
+Apontar o projeto para o GitHub
+	git remote add origin https://github.com/fulanodasilva/exemplo.git
+
+Enviando as alteracoes para o GitHub
+	git push origin master
+
+Para obter o codigo do projeto do GitHub
+	git clone https://github.com/fulanodasilva/exemplo.git
+
+Para ver o log do repositorio
+	git log
+

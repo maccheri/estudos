@@ -34,3 +34,21 @@ Para obter o codigo do projeto do GitHub
 Para ver o log do repositorio
 	git log
 
+Para ver um x numero de logs
+	git log -n x
+
+Para ver um resumo dos commits do projeto
+	git log --oneline
+
+Para mostrar um resumo dos arquivos alterados, com o numero de linhas adicionadas e removidas
+	git log --stat
+
+No git log em caso de aparecer : no console enter para mover para baixo e quando chegar ao final (END) pressionar "q" para fechar
+
+Podemos tambem combinar varios comandos no git log
+	git log -n 2 --oneline --stat 
+
+Para revisar as modificacoes efetuadas, verificando as diferencas entre o arquivo alterado e o que foi comitado
+	git diff
+	Obs: Nao podera ser usado para arquivos novos, que ainda nao estao sendo rastreados pelo Git (antes do primeiro git add)
+

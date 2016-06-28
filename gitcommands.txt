@@ -61,3 +61,13 @@ Para verificar mudanças rastreadas e nao rastreadas ao mesmo tempo
 		git diff [commit number]
 		or
 		git diff HEAD (nao ira funcionar sempre, pois HEAD pode nao estar apontando para o ultimo commit)
+
+Para verificar a diferenca entre 2 commits
+	git diff numeroCommit1..numeroCommit2
+	git diff 33e64de..dae9693
+OU
+Para verificar as mudancas nos arquivos do commit 33e64de em relacao aos dois commits feitos imediatamente antes.
+	git diff 33e64de-2
+O numero depois do - indica quantos commits anteriores devem ser considerados na comparacao
+Porem esses comandos nao sao exatamente iguais pois quando vc utiliza o -2 por exemplo ele ira ainda buscar por mudancas nao comitadas, fora ou dentro da area de stage, ja o comando onde vc utiliza somente os numeros dos commits como parametro nao ira exibir essas mudancas.
+

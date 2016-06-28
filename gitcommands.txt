@@ -43,12 +43,21 @@ Para ver um resumo dos commits do projeto
 Para mostrar um resumo dos arquivos alterados, com o numero de linhas adicionadas e removidas
 	git log --stat
 
-No git log em caso de aparecer : no console enter para mover para baixo e quando chegar ao final (END) pressionar "q" para fechar
+No git log em caso de aparecer : no console enter para mover para baixo e quando desejar finalizar pressione "q"
 
 Podemos tambem combinar varios comandos no git log
 	git log -n 2 --oneline --stat 
 
 Para revisar as modificacoes efetuadas, verificando as diferencas entre o arquivo alterado e o que foi comitado
-	git diff
+	git diff [filename]
 	Obs: Nao podera ser usado para arquivos novos, que ainda nao estao sendo rastreados pelo Git (antes do primeiro git add)
+Porem tambem podemos adicionar um parametro para verificar a diferença entre os arquivos da area de stage e o ultimo commit
+	git diff --staged
 
+Para verificar mudanças rastreadas e nao rastreadas ao mesmo tempo
+	1 - descobrir o codigo do commit que contem o arquivo nao rastreado
+		git log -n 1 --oneline
+	2 - executar diff
+		git diff [commit number]
+		or
+		git diff HEAD (nao ira funcionar sempre, pois HEAD pode nao estar apontando para o ultimo commit)

@@ -74,6 +74,6 @@ Porem esses comandos nao sao exatamente iguais pois quando vc utiliza o -2 por e
 Removendo um arquivo e adicionando a delecao no stage
 	git rm produtos.html
 
-Para renomear um arquivo no git simplesmente
-	git mv destino origem
+Para renomear um arquivo no git simplesmente ou para mover arquivos (as pastas ja devem ter sido criadas previamente)
+	git mv origem destino
 
